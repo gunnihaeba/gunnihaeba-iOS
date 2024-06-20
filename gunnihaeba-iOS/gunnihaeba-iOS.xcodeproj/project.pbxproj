@@ -14,14 +14,16 @@
 		4205168C2C23ED5D009D7B48 /* SampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205168B2C23ED5D009D7B48 /* SampleComponent.swift */; };
 		420516902C23ED6A009D7B48 /* SampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205168F2C23ED69009D7B48 /* SampleViewModel.swift */; };
 		420516922C23EDE1009D7B48 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516912C23EDE1009D7B48 /* HomeView.swift */; };
-		420516942C23EDE4009D7B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516932C23EDE4009D7B48 /* ContentView.swift */; };
 		420516962C23EDE7009D7B48 /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516952C23EDE7009D7B48 /* PostDetailViewModel.swift */; };
 		420516982C23EDF6009D7B48 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516972C23EDF6009D7B48 /* PostDetailView.swift */; };
 		4205169A2C23EE07009D7B48 /* PostDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516992C23EE07009D7B48 /* PostDetailModel.swift */; };
 		4205169D2C23EE0C009D7B48 /* PostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205169B2C23EE0C009D7B48 /* PostsCell.swift */; };
-		4205169E2C23EE0C009D7B48 /* SampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205169C2C23EE0C009D7B48 /* SampleComponent.swift */; };
 		420516A02C23EE15009D7B48 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205169F2C23EE15009D7B48 /* ProfileView.swift */; };
 		420516A22C23EE1E009D7B48 /* PostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516A12C23EE1E009D7B48 /* PostingView.swift */; };
+		4D5A673E2C23EEEF00BB2D2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A673D2C23EEEF00BB2D2D /* ContentView.swift */; };
+		4D5A67402C23EF1700BB2D2D /* MyguniEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A673F2C23EF1700BB2D2D /* MyguniEditView.swift */; };
+		4D5A67422C23EF3800BB2D2D /* MyguniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A67412C23EF3800BB2D2D /* MyguniView.swift */; };
+		4D5A67442C23EF5900BB2D2D /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A67432C23EF5900BB2D2D /* ColorSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +35,16 @@
 		4205168B2C23ED5D009D7B48 /* SampleComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleComponent.swift; sourceTree = "<group>"; };
 		4205168F2C23ED69009D7B48 /* SampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleViewModel.swift; sourceTree = "<group>"; };
 		420516912C23EDE1009D7B48 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		420516932C23EDE4009D7B48 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../../../../Desktop/ContentView.swift; sourceTree = "<group>"; };
 		420516952C23EDE7009D7B48 /* PostDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
 		420516972C23EDF6009D7B48 /* PostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		420516992C23EE07009D7B48 /* PostDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailModel.swift; sourceTree = "<group>"; };
 		4205169B2C23EE0C009D7B48 /* PostsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsCell.swift; sourceTree = "<group>"; };
-		4205169C2C23EE0C009D7B48 /* SampleComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SampleComponent.swift; path = ../../../../../../Desktop/SampleComponent.swift; sourceTree = "<group>"; };
 		4205169F2C23EE15009D7B48 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		420516A12C23EE1E009D7B48 /* PostingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostingView.swift; sourceTree = "<group>"; };
+		4D5A673D2C23EEEF00BB2D2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4D5A673F2C23EF1700BB2D2D /* MyguniEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyguniEditView.swift; sourceTree = "<group>"; };
+		4D5A67412C23EF3800BB2D2D /* MyguniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyguniView.swift; sourceTree = "<group>"; };
+		4D5A67432C23EF5900BB2D2D /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				420516772C23ECFF009D7B48 /* gunnihaeba_iOSApp.swift */,
+				4D5A67432C23EF5900BB2D2D /* ColorSet.swift */,
 				420516882C23ED4D009D7B48 /* Component */,
 				420516872C23ED49009D7B48 /* View */,
 				420516862C23ED42009D7B48 /* ViewModel */,
@@ -115,9 +120,11 @@
 			children = (
 				420516912C23EDE1009D7B48 /* HomeView.swift */,
 				420516972C23EDF6009D7B48 /* PostDetailView.swift */,
-				420516932C23EDE4009D7B48 /* ContentView.swift */,
 				4205169F2C23EE15009D7B48 /* ProfileView.swift */,
 				420516A12C23EE1E009D7B48 /* PostingView.swift */,
+				4D5A673F2C23EF1700BB2D2D /* MyguniEditView.swift */,
+				4D5A67412C23EF3800BB2D2D /* MyguniView.swift */,
+				4D5A673D2C23EEEF00BB2D2D /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				4205169B2C23EE0C009D7B48 /* PostsCell.swift */,
-				4205169C2C23EE0C009D7B48 /* SampleComponent.swift */,
 				4205168B2C23ED5D009D7B48 /* SampleComponent.swift */,
 			);
 			path = Component;
@@ -205,14 +211,16 @@
 				420516982C23EDF6009D7B48 /* PostDetailView.swift in Sources */,
 				4205169D2C23EE0C009D7B48 /* PostsCell.swift in Sources */,
 				420516902C23ED6A009D7B48 /* SampleViewModel.swift in Sources */,
+				4D5A67402C23EF1700BB2D2D /* MyguniEditView.swift in Sources */,
+				4D5A67442C23EF5900BB2D2D /* ColorSet.swift in Sources */,
 				420516962C23EDE7009D7B48 /* PostDetailViewModel.swift in Sources */,
+				4D5A67422C23EF3800BB2D2D /* MyguniView.swift in Sources */,
 				420516A02C23EE15009D7B48 /* ProfileView.swift in Sources */,
 				4205169A2C23EE07009D7B48 /* PostDetailModel.swift in Sources */,
-				420516942C23EDE4009D7B48 /* ContentView.swift in Sources */,
-				4205169E2C23EE0C009D7B48 /* SampleComponent.swift in Sources */,
 				4205168C2C23ED5D009D7B48 /* SampleComponent.swift in Sources */,
 				420516922C23EDE1009D7B48 /* HomeView.swift in Sources */,
 				4205168A2C23ED59009D7B48 /* SampleModel.swift in Sources */,
+				4D5A673E2C23EEEF00BB2D2D /* ContentView.swift in Sources */,
 				420516782C23ECFF009D7B48 /* gunnihaeba_iOSApp.swift in Sources */,
 				420516A22C23EE1E009D7B48 /* PostingView.swift in Sources */,
 			);
