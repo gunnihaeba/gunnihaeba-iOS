@@ -16,7 +16,7 @@ struct ContentView: View {
                     Text("건의 리스트")
                 }
             
-            PostingView(title: .constant(""), content: .constant(""))
+            PostingView(title: "", content: "")
                 .tabItem {
                     Image(systemName: "pencil")
                     Text("건의하기")

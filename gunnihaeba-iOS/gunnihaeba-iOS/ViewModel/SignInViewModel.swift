@@ -15,7 +15,7 @@ class SignInViewModel: ObservableObject {
     func signin() {
         guard let viewController = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first?.rootViewController else {return}
         
-        let nextVC = UIHostingController(rootView: NavigationView { HomeView() })
+        let nextVC = UIHostingController(rootView: NavigationView { ContentView() })
         nextVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
         
         let baseUrl = "http://13.125.220.50:8080"

@@ -10,7 +10,7 @@ import Foundation
 struct TokenModel: Codable {
     var status: Int = 0
     var message: String = ""
-    var data: DataClass = DataClass()
+    static var data: DataClass = DataClass()
 }
 
 struct DataClass: Codable {
