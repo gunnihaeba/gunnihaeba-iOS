@@ -20,6 +20,17 @@
 		4205169D2C23EE0C009D7B48 /* PostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205169B2C23EE0C009D7B48 /* PostsCell.swift */; };
 		420516A02C23EE15009D7B48 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205169F2C23EE15009D7B48 /* ProfileView.swift */; };
 		420516A22C23EE1E009D7B48 /* PostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516A12C23EE1E009D7B48 /* PostingView.swift */; };
+		420516A72C250761009D7B48 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 420516A62C250761009D7B48 /* Alamofire */; };
+		420516A92C250761009D7B48 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 420516A82C250761009D7B48 /* AlamofireDynamic */; };
+		420516AB2C2507C3009D7B48 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516AA2C2507C3009D7B48 /* SignInView.swift */; };
+		420516AD2C2507C9009D7B48 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516AC2C2507C9009D7B48 /* SignUpView.swift */; };
+		420516AF2C250807009D7B48 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516AE2C250807009D7B48 /* InputField.swift */; };
+		420516B12C250939009D7B48 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516B02C250939009D7B48 /* SignUpModel.swift */; };
+		420516B32C2509E4009D7B48 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516B22C2509E4009D7B48 /* SignUpViewModel.swift */; };
+		420516B62C250A61009D7B48 /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420516B52C250A61009D7B48 /* ApiContent.plist */; };
+		420516BC2C251488009D7B48 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516BB2C251488009D7B48 /* SignInViewModel.swift */; };
+		420516BE2C2514C6009D7B48 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516BD2C2514C6009D7B48 /* SignInModel.swift */; };
+		420516C02C2515AF009D7B48 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516BF2C2515AF009D7B48 /* TokenModel.swift */; };
 		4D5A673E2C23EEEF00BB2D2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A673D2C23EEEF00BB2D2D /* ContentView.swift */; };
 		4D5A67402C23EF1700BB2D2D /* MyguniEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A673F2C23EF1700BB2D2D /* MyguniEditView.swift */; };
 		4D5A67422C23EF3800BB2D2D /* MyguniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A67412C23EF3800BB2D2D /* MyguniView.swift */; };
@@ -41,6 +52,16 @@
 		4205169B2C23EE0C009D7B48 /* PostsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsCell.swift; sourceTree = "<group>"; };
 		4205169F2C23EE15009D7B48 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		420516A12C23EE1E009D7B48 /* PostingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostingView.swift; sourceTree = "<group>"; };
+		420516AA2C2507C3009D7B48 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		420516AC2C2507C9009D7B48 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		420516AE2C250807009D7B48 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		420516B02C250939009D7B48 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		420516B22C2509E4009D7B48 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		420516B52C250A61009D7B48 /* ApiContent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiContent.plist; sourceTree = "<group>"; };
+		420516B72C250B54009D7B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		420516BB2C251488009D7B48 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		420516BD2C2514C6009D7B48 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		420516BF2C2515AF009D7B48 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		4D5A673D2C23EEEF00BB2D2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D5A673F2C23EF1700BB2D2D /* MyguniEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyguniEditView.swift; sourceTree = "<group>"; };
 		4D5A67412C23EF3800BB2D2D /* MyguniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyguniView.swift; sourceTree = "<group>"; };
@@ -52,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420516A72C250761009D7B48 /* Alamofire in Frameworks */,
+				420516A92C250761009D7B48 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +102,7 @@
 			children = (
 				420516772C23ECFF009D7B48 /* gunnihaeba_iOSApp.swift */,
 				4D5A67432C23EF5900BB2D2D /* ColorSet.swift */,
+				420516B42C250A52009D7B48 /* Plits */,
 				420516882C23ED4D009D7B48 /* Component */,
 				420516872C23ED49009D7B48 /* View */,
 				420516862C23ED42009D7B48 /* ViewModel */,
@@ -102,6 +126,9 @@
 			children = (
 				420516992C23EE07009D7B48 /* PostDetailModel.swift */,
 				420516892C23ED59009D7B48 /* SampleModel.swift */,
+				420516B02C250939009D7B48 /* SignUpModel.swift */,
+				420516BD2C2514C6009D7B48 /* SignInModel.swift */,
+				420516BF2C2515AF009D7B48 /* TokenModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				420516952C23EDE7009D7B48 /* PostDetailViewModel.swift */,
+				420516B22C2509E4009D7B48 /* SignUpViewModel.swift */,
+				420516BB2C251488009D7B48 /* SignInViewModel.swift */,
 				4205168F2C23ED69009D7B48 /* SampleViewModel.swift */,
 			);
 			path = ViewModel;
@@ -125,6 +154,8 @@
 				4D5A673F2C23EF1700BB2D2D /* MyguniEditView.swift */,
 				4D5A67412C23EF3800BB2D2D /* MyguniView.swift */,
 				4D5A673D2C23EEEF00BB2D2D /* ContentView.swift */,
+				420516AA2C2507C3009D7B48 /* SignInView.swift */,
+				420516AC2C2507C9009D7B48 /* SignUpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,8 +165,18 @@
 			children = (
 				4205169B2C23EE0C009D7B48 /* PostsCell.swift */,
 				4205168B2C23ED5D009D7B48 /* SampleComponent.swift */,
+				420516AE2C250807009D7B48 /* InputField.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		420516B42C250A52009D7B48 /* Plits */ = {
+			isa = PBXGroup;
+			children = (
+				420516B72C250B54009D7B48 /* Info.plist */,
+				420516B52C250A61009D7B48 /* ApiContent.plist */,
+			);
+			path = Plits;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +195,10 @@
 			dependencies = (
 			);
 			name = "gunnihaeba-iOS";
+			packageProductDependencies = (
+				420516A62C250761009D7B48 /* Alamofire */,
+				420516A82C250761009D7B48 /* AlamofireDynamic */,
+			);
 			productName = "gunnihaeba-iOS";
 			productReference = 420516742C23ECFF009D7B48 /* gunnihaeba-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +227,9 @@
 				Base,
 			);
 			mainGroup = 4205166B2C23ECFF009D7B48;
+			packageReferences = (
+				420516A52C250761009D7B48 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 420516752C23ECFF009D7B48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -198,6 +246,7 @@
 			files = (
 				4205167F2C23ECFF009D7B48 /* Preview Assets.xcassets in Resources */,
 				4205167C2C23ECFF009D7B48 /* Assets.xcassets in Resources */,
+				420516B62C250A61009D7B48 /* ApiContent.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,19 +258,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				420516982C23EDF6009D7B48 /* PostDetailView.swift in Sources */,
+				420516C02C2515AF009D7B48 /* TokenModel.swift in Sources */,
 				4205169D2C23EE0C009D7B48 /* PostsCell.swift in Sources */,
+				420516B32C2509E4009D7B48 /* SignUpViewModel.swift in Sources */,
 				420516902C23ED6A009D7B48 /* SampleViewModel.swift in Sources */,
 				4D5A67402C23EF1700BB2D2D /* MyguniEditView.swift in Sources */,
 				4D5A67442C23EF5900BB2D2D /* ColorSet.swift in Sources */,
 				420516962C23EDE7009D7B48 /* PostDetailViewModel.swift in Sources */,
 				4D5A67422C23EF3800BB2D2D /* MyguniView.swift in Sources */,
+				420516BC2C251488009D7B48 /* SignInViewModel.swift in Sources */,
 				420516A02C23EE15009D7B48 /* ProfileView.swift in Sources */,
 				4205169A2C23EE07009D7B48 /* PostDetailModel.swift in Sources */,
+				420516BE2C2514C6009D7B48 /* SignInModel.swift in Sources */,
 				4205168C2C23ED5D009D7B48 /* SampleComponent.swift in Sources */,
 				420516922C23EDE1009D7B48 /* HomeView.swift in Sources */,
+				420516AF2C250807009D7B48 /* InputField.swift in Sources */,
+				420516B12C250939009D7B48 /* SignUpModel.swift in Sources */,
 				4205168A2C23ED59009D7B48 /* SampleModel.swift in Sources */,
+				420516AD2C2507C9009D7B48 /* SignUpView.swift in Sources */,
 				4D5A673E2C23EEEF00BB2D2D /* ContentView.swift in Sources */,
 				420516782C23ECFF009D7B48 /* gunnihaeba_iOSApp.swift in Sources */,
+				420516AB2C2507C3009D7B48 /* SignInView.swift in Sources */,
 				420516A22C23EE1E009D7B48 /* PostingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +415,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"gunnihaeba-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gunnihaeba-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -386,6 +444,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"gunnihaeba-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gunnihaeba-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +485,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		420516A52C250761009D7B48 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		420516A62C250761009D7B48 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 420516A52C250761009D7B48 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		420516A82C250761009D7B48 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 420516A52C250761009D7B48 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4205166C2C23ECFF009D7B48 /* Project object */;
 }
