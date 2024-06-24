@@ -46,7 +46,7 @@
 		4D5A67402C23EF1700BB2D2D /* MyguniEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A673F2C23EF1700BB2D2D /* MyguniEditView.swift */; };
 		4D5A67422C23EF3800BB2D2D /* MyguniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A67412C23EF3800BB2D2D /* MyguniView.swift */; };
 		4D5A67442C23EF5900BB2D2D /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A67432C23EF5900BB2D2D /* ColorSet.swift */; };
-		4D5A67502C25195200BB2D2D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4D5A674F2C25195200BB2D2D /* Alamofire */; };
+		4D7EDBF12C290C9B0071C350 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7EDBF02C290C9B0071C350 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5A67502C25195200BB2D2D /* Alamofire in Frameworks */,
+				4D7EDBF12C290C9B0071C350 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +281,7 @@
 			);
 			name = "gunnihaeba-iOS";
 			packageProductDependencies = (
-				4D5A674F2C25195200BB2D2D /* Alamofire */,
+				4D7EDBF02C290C9B0071C350 /* Alamofire */,
 			);
 			productName = "gunnihaeba-iOS";
 			productReference = 420516742C23ECFF009D7B48 /* gunnihaeba-iOS.app */;
@@ -599,7 +599,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4D5A674F2C25195200BB2D2D /* Alamofire */ = {
+		4D7EDBF02C290C9B0071C350 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Alamofire;
 		};

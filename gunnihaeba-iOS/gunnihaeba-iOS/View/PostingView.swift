@@ -61,23 +61,23 @@ struct PostingView: View {
         }
     }
     func submitPost(title: String, content: String) {
-            let parameters: [String: Any] = [
-                "title": title,
-                "content": content
-            ]
-
-            let url = "http://13.125.220.50:8080/issue"
-
-            AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: [.authorization(bearerToken: LoginUserHashCache.shared.checkAccessToken() ?? LoginUserHashCache.accessToken)])
-                .responseJSON { response in
-                    switch response.result {
-                    case .success(let value):
-                        print("작성 성공: \(value)")
-                    case .failure(let error):
-                        print("작성 실패: \(error)")
-                    }
+        let parameters: [String: Any] = [
+            "title": title,
+            "content": content
+        ]
+        
+        let url = "http://13.125.220.50:8080/issue"
+        
+        AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: [.authorization(bearerToken: LoginUserHashCache.shared.checkAccessToken() ?? LoginUserHashCache.accessToken)])
+            .responseJSON { response in
+                switch response.result {
+                case .success(let value):
+                    print("작성 성공: \(value)")
+                case .failure(let error):
+                    print("작성 실패: \(error)")
                 }
-        }
+            }
+    }
 }
 
 #Preview {

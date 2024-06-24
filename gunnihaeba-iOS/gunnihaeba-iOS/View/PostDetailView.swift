@@ -51,7 +51,7 @@ struct PostDetailView: View {
                     
                     RoundedRectangle(cornerRadius: 10)
                         .foregroundStyle(Color(red: 220/255, green: 220/255, blue: 220/255))
-                        .frame(width: 340, height: 350)
+                        .frame(width: 340, height: 300)
                         .overlay {
                             VStack {
                                 HStack(alignment: .top) {
@@ -64,6 +64,49 @@ struct PostDetailView: View {
                             }
                             .padding()
                         }
+                    
+                    HStack(spacing:70) {
+                        Button {
+                            viewModel.reactToPost(postId: postId, reactType: "LIKE")
+                            isHate.toggle()
+                        } label: {
+                            Rectangle()
+                                .foregroundStyle(Color(red: 220/255, green: 220/255, blue: 220/255))
+                                .frame(width:100,height:100)
+                                .cornerRadius(50)
+                                .overlay(
+                                    VStack {
+                                        Image(systemName: "hand.thumbsup.fill")
+                                            .resizable()
+                                            .foregroundColor(.black)
+                                            .scaledToFit()
+                                            .frame(width:30)
+                                        Text("\(viewModel.likeCount)")
+                                            .foregroundColor(.black)
+                                    }
+                                )
+                        }
+                        Button {
+                            viewModel.reactToPost(postId: postId, reactType: "HATE")
+                            isLike.toggle()
+                        } label: {
+                            Rectangle()
+                                .foregroundStyle(Color(red: 220/255, green: 220/255, blue: 220/255))
+                                .frame(width:100,height:100)
+                                .cornerRadius(50)
+                                .overlay(
+                                    VStack {
+                                        Image(systemName: "hand.thumbsdown.fill")
+                                            .resizable()
+                                            .foregroundColor(.black)
+                                            .scaledToFit()
+                                            .frame(width:30)
+                                        Text("\(viewModel.hateCount)")
+                                            .foregroundColor(.black)
+                                    }
+                                )
+                        }
+                    }
                     
                     Rectangle()
                         .frame(height: 1)
@@ -79,6 +122,7 @@ struct PostDetailView: View {
             .onAppear {
                 viewModel.getPostDetail(postId: postId)
                 viewModel.getComment(postId: postId)
+                viewModel.getPostLikeHate(postId: postId)
             }
             
             HStack(spacing: 0) {

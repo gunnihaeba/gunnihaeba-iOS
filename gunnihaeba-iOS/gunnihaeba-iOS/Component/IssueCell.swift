@@ -25,7 +25,7 @@ struct IssueCell: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: MyguniEditView()) {
+                    NavigationLink(destination: MyguniEditView(postId: viewModel.model.data[index].id)) {
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width: 50, height: 50)
                             .foregroundStyle(.blue)

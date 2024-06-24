@@ -36,3 +36,9 @@ struct CommentData: Codable {
     var content: String = ""
     var date: String = ""
 }
+
+struct ReactData: Decodable {
+    var likeCnt: Int = 0
+    var hateCnt: Int = 0
+    var userReact: String = "LIKE"
+}
