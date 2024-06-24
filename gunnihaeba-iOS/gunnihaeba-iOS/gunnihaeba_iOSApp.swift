@@ -12,7 +12,11 @@ struct gunnihaeba_iOSApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                SignInView()
+                if (LoginUserHashCache.shared.checkAccessToken() != nil) {
+                    ContentView()
+                } else {
+                    SignInView(viewModel: SignInViewModel(authService: RemoteAuthService()))
+                }
             }
         }
     }

@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct SignInView: View {
-    @StateObject var viewModel = SignInViewModel()
+    @State var email: String = ""
+    @State var password: String = ""
+    @StateObject var viewModel: SignInViewModel
     
     var body: some View {
         VStack(spacing: 50) {
-            InputField(text: $viewModel.model.userId, placeholder: "아이디를 입력해주세요")
-            InputField(text: $viewModel.model.password, placeholder: "비밀번호를 입력해주세요")
+            Text("건의해봐")
+                .font(.system(size: 20, weight: .bold))
+                .padding(.vertical, 50)
+            
+            InputField(text: $email, placeholder: "아이디를 입력해주세요")
+            InputField(text: $password, placeholder: "비밀번호를 입력해주세요")
             
             Button {
-                viewModel.signin()
+                Task{
+                     await viewModel.login(email: email,password:password)
+                }
             } label: {
                 RoundedRectangle(cornerRadius: 10)
                     .frame(width: 330, height: 50)
@@ -31,8 +39,4 @@ struct SignInView: View {
             }
         }
     }
-}
-
-#Preview {
-    SignInView()
 }

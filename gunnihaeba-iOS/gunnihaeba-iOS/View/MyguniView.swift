@@ -8,66 +8,28 @@
 import SwiftUI
 
 struct MyguniView: View {
-    @State var userName: String = "이승혁"
-    @State var title: String = "제목"
+    @StateObject var viewModel = MyIssueViewModel()
+    
     var body: some View {
-        Text("\"(userName)\"님의 건의")
-            .font(.system(size: 30, weight: .regular))
-            .offset(x:-50)
-            .padding(.top,50)
-        
         ScrollView {
-            Rectangle()
-                .frame(width:298,height:73)
-                .foregroundColor(Color.boxColor)
-                .overlay(
-                    HStack {
-                        Text("(title)")
-                            .font(.system(size: 30, weight: .regular))
-                            .padding(.trailing,50)
-                        NavigationLink(destination: MyguniEditView(title: $title)) {
-                            Rectangle()
-                                .frame(width:71,height:55)
-                                .foregroundColor(.black)
-                                .overlay(
-                                    Text("수정")
-                                        .font(.system(size: 30, weight: .regular))
-                                        .foregroundColor(.white)
-                                )
-                        }
-                        Rectangle()
-                            .frame(width:71,height:55)
-                            .foregroundColor(.black)
-                            .overlay(
-                                Text("삭제")
-                                    .font(.system(size: 30, weight: .regular))
-                                    .foregroundColor(.white)
-                            )
-                    }
-                )
+            ForEach(0..<viewModel.model.data.count, id: \.self) { index in
+                IssueCell(viewModel: viewModel, index: index) {
+                    viewModel.deletePost(postId: viewModel.model.data[index].id)
+                    viewModel.getLists()
+                }
+            }
         }
-        Image(systemName: "person")
-            .resizable()
-            .scaledToFit()
-            .frame(width:80)
-            .padding(30)
-        Button {
-            
-        } label: {
-            Rectangle()
-                .frame(width:158,height:73)
-                .foregroundColor(.boxColor)
-                .overlay(
-                    Text("로그아웃")
-                        .font(.system(size: 30, weight: .regular))
-                        .foregroundColor(.black)
-                )
-                .offset(x:100)
-                .padding(.bottom,30)
+        .refreshable {
+            await viewModel.getLists()
+        }
+        .onAppear {
+            viewModel.getLists()
         }
     }
 }
 
 #Preview {
-    MyguniView()
+    NavigationView {
+        MyguniView()
+    }
 }

@@ -22,10 +22,16 @@ struct ContentView: View {
                     Text("건의하기")
                 }
             
-            ProfileView()
+            MyguniView()
                 .tabItem {
                     Image(systemName: "person")
                     Text("나의 건의")
+                }
+            
+            LogOutView()
+                .tabItem {
+                    Image(systemName: "door.right.hand.open")
+                    Text("로그아웃")
                 }
         }
     }

@@ -17,7 +17,6 @@
 		420516962C23EDE7009D7B48 /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516952C23EDE7009D7B48 /* PostDetailViewModel.swift */; };
 		420516982C23EDF6009D7B48 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516972C23EDF6009D7B48 /* PostDetailView.swift */; };
 		4205169A2C23EE07009D7B48 /* PostDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516992C23EE07009D7B48 /* PostDetailModel.swift */; };
-		420516A02C23EE15009D7B48 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205169F2C23EE15009D7B48 /* ProfileView.swift */; };
 		420516A22C23EE1E009D7B48 /* PostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516A12C23EE1E009D7B48 /* PostingView.swift */; };
 		420516AB2C2507C3009D7B48 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516AA2C2507C3009D7B48 /* SignInView.swift */; };
 		420516AD2C2507C9009D7B48 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516AC2C2507C9009D7B48 /* SignUpView.swift */; };
@@ -26,8 +25,23 @@
 		420516B32C2509E4009D7B48 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516B22C2509E4009D7B48 /* SignUpViewModel.swift */; };
 		420516B62C250A61009D7B48 /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420516B52C250A61009D7B48 /* ApiContent.plist */; };
 		420516BC2C251488009D7B48 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516BB2C251488009D7B48 /* SignInViewModel.swift */; };
-		420516BE2C2514C6009D7B48 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516BD2C2514C6009D7B48 /* SignInModel.swift */; };
-		420516C02C2515AF009D7B48 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516BF2C2515AF009D7B48 /* TokenModel.swift */; };
+		420516CF2C26EE54009D7B48 /* LoginUserHashCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516C22C26EE53009D7B48 /* LoginUserHashCache.swift */; };
+		420516D02C26EE54009D7B48 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516C42C26EE53009D7B48 /* LoginRequest.swift */; };
+		420516D12C26EE54009D7B48 /* ReissueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516C52C26EE53009D7B48 /* ReissueRequest.swift */; };
+		420516D22C26EE54009D7B48 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516C72C26EE53009D7B48 /* LoginResponse.swift */; };
+		420516D32C26EE54009D7B48 /* ReissueResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516C82C26EE53009D7B48 /* ReissueResponse.swift */; };
+		420516D42C26EE54009D7B48 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516CA2C26EE53009D7B48 /* AuthService.swift */; };
+		420516D52C26EE54009D7B48 /* RemoteAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516CB2C26EE53009D7B48 /* RemoteAuthService.swift */; };
+		420516D62C26EE54009D7B48 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516CD2C26EE53009D7B48 /* Interceptor.swift */; };
+		420516D82C26EEE0009D7B48 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516D72C26EEE0009D7B48 /* Response.swift */; };
+		420516DC2C26F298009D7B48 /* MyIssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516DB2C26F298009D7B48 /* MyIssueModel.swift */; };
+		420516DE2C26F2CE009D7B48 /* MyIssueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516DD2C26F2CE009D7B48 /* MyIssueViewModel.swift */; };
+		420516E02C26F676009D7B48 /* IssueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516DF2C26F676009D7B48 /* IssueCell.swift */; };
+		420516E22C270520009D7B48 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516E12C270520009D7B48 /* PostListViewModel.swift */; };
+		420516E42C27054B009D7B48 /* PostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516E32C27054B009D7B48 /* PostsCell.swift */; };
+		420516E62C270723009D7B48 /* PostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516E52C270723009D7B48 /* PostListModel.swift */; };
+		420516E82C270EE4009D7B48 /* LogOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516E72C270EE4009D7B48 /* LogOutView.swift */; };
+		420516EA2C271196009D7B48 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420516E92C271196009D7B48 /* CommentCell.swift */; };
 		4D5A673E2C23EEEF00BB2D2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A673D2C23EEEF00BB2D2D /* ContentView.swift */; };
 		4D5A67402C23EF1700BB2D2D /* MyguniEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A673F2C23EF1700BB2D2D /* MyguniEditView.swift */; };
 		4D5A67422C23EF3800BB2D2D /* MyguniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A67412C23EF3800BB2D2D /* MyguniView.swift */; };
@@ -47,7 +61,6 @@
 		420516952C23EDE7009D7B48 /* PostDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
 		420516972C23EDF6009D7B48 /* PostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		420516992C23EE07009D7B48 /* PostDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailModel.swift; sourceTree = "<group>"; };
-		4205169F2C23EE15009D7B48 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		420516A12C23EE1E009D7B48 /* PostingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostingView.swift; sourceTree = "<group>"; };
 		420516AA2C2507C3009D7B48 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		420516AC2C2507C9009D7B48 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -57,8 +70,23 @@
 		420516B52C250A61009D7B48 /* ApiContent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiContent.plist; sourceTree = "<group>"; };
 		420516B72C250B54009D7B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		420516BB2C251488009D7B48 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
-		420516BD2C2514C6009D7B48 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
-		420516BF2C2515AF009D7B48 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		420516C22C26EE53009D7B48 /* LoginUserHashCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUserHashCache.swift; sourceTree = "<group>"; };
+		420516C42C26EE53009D7B48 /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		420516C52C26EE53009D7B48 /* ReissueRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReissueRequest.swift; sourceTree = "<group>"; };
+		420516C72C26EE53009D7B48 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		420516C82C26EE53009D7B48 /* ReissueResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReissueResponse.swift; sourceTree = "<group>"; };
+		420516CA2C26EE53009D7B48 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		420516CB2C26EE53009D7B48 /* RemoteAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAuthService.swift; sourceTree = "<group>"; };
+		420516CD2C26EE53009D7B48 /* Interceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
+		420516D72C26EEE0009D7B48 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		420516DB2C26F298009D7B48 /* MyIssueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIssueModel.swift; sourceTree = "<group>"; };
+		420516DD2C26F2CE009D7B48 /* MyIssueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIssueViewModel.swift; sourceTree = "<group>"; };
+		420516DF2C26F676009D7B48 /* IssueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueCell.swift; sourceTree = "<group>"; };
+		420516E12C270520009D7B48 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		420516E32C27054B009D7B48 /* PostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCell.swift; sourceTree = "<group>"; };
+		420516E52C270723009D7B48 /* PostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModel.swift; sourceTree = "<group>"; };
+		420516E72C270EE4009D7B48 /* LogOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutView.swift; sourceTree = "<group>"; };
+		420516E92C271196009D7B48 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		4D5A673D2C23EEEF00BB2D2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D5A673F2C23EF1700BB2D2D /* MyguniEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyguniEditView.swift; sourceTree = "<group>"; };
 		4D5A67412C23EF3800BB2D2D /* MyguniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyguniView.swift; sourceTree = "<group>"; };
@@ -97,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				420516772C23ECFF009D7B48 /* gunnihaeba_iOSApp.swift */,
-				4D5A67432C23EF5900BB2D2D /* ColorSet.swift */,
+				420516C12C26EE2B009D7B48 /* Util */,
 				420516B42C250A52009D7B48 /* Plits */,
 				420516882C23ED4D009D7B48 /* Component */,
 				420516872C23ED49009D7B48 /* View */,
@@ -123,8 +151,9 @@
 				420516992C23EE07009D7B48 /* PostDetailModel.swift */,
 				420516892C23ED59009D7B48 /* SampleModel.swift */,
 				420516B02C250939009D7B48 /* SignUpModel.swift */,
-				420516BD2C2514C6009D7B48 /* SignInModel.swift */,
-				420516BF2C2515AF009D7B48 /* TokenModel.swift */,
+				420516D72C26EEE0009D7B48 /* Response.swift */,
+				420516DB2C26F298009D7B48 /* MyIssueModel.swift */,
+				420516E52C270723009D7B48 /* PostListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +165,8 @@
 				420516B22C2509E4009D7B48 /* SignUpViewModel.swift */,
 				420516BB2C251488009D7B48 /* SignInViewModel.swift */,
 				4205168F2C23ED69009D7B48 /* SampleViewModel.swift */,
+				420516DD2C26F2CE009D7B48 /* MyIssueViewModel.swift */,
+				420516E12C270520009D7B48 /* PostListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -145,13 +176,13 @@
 			children = (
 				420516912C23EDE1009D7B48 /* HomeView.swift */,
 				420516972C23EDF6009D7B48 /* PostDetailView.swift */,
-				4205169F2C23EE15009D7B48 /* ProfileView.swift */,
 				420516A12C23EE1E009D7B48 /* PostingView.swift */,
 				4D5A673F2C23EF1700BB2D2D /* MyguniEditView.swift */,
 				4D5A67412C23EF3800BB2D2D /* MyguniView.swift */,
 				4D5A673D2C23EEEF00BB2D2D /* ContentView.swift */,
 				420516AA2C2507C3009D7B48 /* SignInView.swift */,
 				420516AC2C2507C9009D7B48 /* SignUpView.swift */,
+				420516E72C270EE4009D7B48 /* LogOutView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +192,9 @@
 			children = (
 				4205168B2C23ED5D009D7B48 /* SampleComponent.swift */,
 				420516AE2C250807009D7B48 /* InputField.swift */,
+				420516DF2C26F676009D7B48 /* IssueCell.swift */,
+				420516E32C27054B009D7B48 /* PostsCell.swift */,
+				420516E92C271196009D7B48 /* CommentCell.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -172,6 +206,62 @@
 				420516B52C250A61009D7B48 /* ApiContent.plist */,
 			);
 			path = Plits;
+			sourceTree = "<group>";
+		};
+		420516C12C26EE2B009D7B48 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4D5A67432C23EF5900BB2D2D /* ColorSet.swift */,
+				420516CE2C26EE53009D7B48 /* Auth */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		420516C32C26EE53009D7B48 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				420516C22C26EE53009D7B48 /* LoginUserHashCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		420516C62C26EE53009D7B48 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				420516C42C26EE53009D7B48 /* LoginRequest.swift */,
+				420516C52C26EE53009D7B48 /* ReissueRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		420516C92C26EE53009D7B48 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				420516C72C26EE53009D7B48 /* LoginResponse.swift */,
+				420516C82C26EE53009D7B48 /* ReissueResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		420516CC2C26EE53009D7B48 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				420516CA2C26EE53009D7B48 /* AuthService.swift */,
+				420516CB2C26EE53009D7B48 /* RemoteAuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		420516CE2C26EE53009D7B48 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				420516C32C26EE53009D7B48 /* Cache */,
+				420516C62C26EE53009D7B48 /* Request */,
+				420516C92C26EE53009D7B48 /* Response */,
+				420516CC2C26EE53009D7B48 /* Service */,
+				420516CD2C26EE53009D7B48 /* Interceptor.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,28 +341,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420516E22C270520009D7B48 /* PostListViewModel.swift in Sources */,
 				420516982C23EDF6009D7B48 /* PostDetailView.swift in Sources */,
-				420516C02C2515AF009D7B48 /* TokenModel.swift in Sources */,
+				420516D62C26EE54009D7B48 /* Interceptor.swift in Sources */,
+				420516CF2C26EE54009D7B48 /* LoginUserHashCache.swift in Sources */,
 				420516B32C2509E4009D7B48 /* SignUpViewModel.swift in Sources */,
+				420516D82C26EEE0009D7B48 /* Response.swift in Sources */,
 				420516902C23ED6A009D7B48 /* SampleViewModel.swift in Sources */,
 				4D5A67402C23EF1700BB2D2D /* MyguniEditView.swift in Sources */,
+				420516D22C26EE54009D7B48 /* LoginResponse.swift in Sources */,
 				4D5A67442C23EF5900BB2D2D /* ColorSet.swift in Sources */,
 				420516962C23EDE7009D7B48 /* PostDetailViewModel.swift in Sources */,
 				4D5A67422C23EF3800BB2D2D /* MyguniView.swift in Sources */,
+				420516DE2C26F2CE009D7B48 /* MyIssueViewModel.swift in Sources */,
 				420516BC2C251488009D7B48 /* SignInViewModel.swift in Sources */,
-				420516A02C23EE15009D7B48 /* ProfileView.swift in Sources */,
 				4205169A2C23EE07009D7B48 /* PostDetailModel.swift in Sources */,
-				420516BE2C2514C6009D7B48 /* SignInModel.swift in Sources */,
 				4205168C2C23ED5D009D7B48 /* SampleComponent.swift in Sources */,
 				420516922C23EDE1009D7B48 /* HomeView.swift in Sources */,
+				420516E62C270723009D7B48 /* PostListModel.swift in Sources */,
+				420516D02C26EE54009D7B48 /* LoginRequest.swift in Sources */,
 				420516AF2C250807009D7B48 /* InputField.swift in Sources */,
+				420516E02C26F676009D7B48 /* IssueCell.swift in Sources */,
 				420516B12C250939009D7B48 /* SignUpModel.swift in Sources */,
 				4205168A2C23ED59009D7B48 /* SampleModel.swift in Sources */,
+				420516EA2C271196009D7B48 /* CommentCell.swift in Sources */,
+				420516D32C26EE54009D7B48 /* ReissueResponse.swift in Sources */,
 				420516AD2C2507C9009D7B48 /* SignUpView.swift in Sources */,
+				420516E42C27054B009D7B48 /* PostsCell.swift in Sources */,
+				420516D12C26EE54009D7B48 /* ReissueRequest.swift in Sources */,
+				420516E82C270EE4009D7B48 /* LogOutView.swift in Sources */,
 				4D5A673E2C23EEEF00BB2D2D /* ContentView.swift in Sources */,
 				420516782C23ECFF009D7B48 /* gunnihaeba_iOSApp.swift in Sources */,
+				420516D52C26EE54009D7B48 /* RemoteAuthService.swift in Sources */,
 				420516AB2C2507C3009D7B48 /* SignInView.swift in Sources */,
+				420516DC2C26F298009D7B48 /* MyIssueModel.swift in Sources */,
 				420516A22C23EE1E009D7B48 /* PostingView.swift in Sources */,
+				420516D42C26EE54009D7B48 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,14 +510,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gunnihaeba-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = H3PHX39629;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "gunnihaeba-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -435,14 +541,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gunnihaeba-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = H3PHX39629;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "gunnihaeba-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

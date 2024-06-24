@@ -8,110 +8,108 @@
 import SwiftUI
 
 struct PostDetailView: View {
+    @Environment(\.presentationMode) var presentationMode
     @StateObject var viewModel = PostDetailViewModel()
     
     @State var isLike: Bool = false
     @State var isHate: Bool = false
     
+    @FocusState private var isFocused: Bool
+    
+    let postId: Int
+    
     var body: some View {
         VStack {
-            RoundedRectangle(cornerRadius: 10)
-                .foregroundStyle(Color(red: 220/255, green: 220/255, blue: 220/255))
-                .frame(width: 340, height: 60)
-                .overlay {
-                    HStack {
-                        Text(viewModel.model.title)
-                        
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                }
-            
-            RoundedRectangle(cornerRadius: 10)
-                .foregroundStyle(Color(red: 220/255, green: 220/255, blue: 220/255))
-                .frame(width: 340, height: 100)
-                .overlay {
-                    HStack {
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text("작성자: \(viewModel.model.writer)")
-                            Text("작성일: \(viewModel.model.createdDate)")
+            ScrollView {
+                VStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundStyle(Color(red: 220/255, green: 220/255, blue: 220/255))
+                        .frame(width: 340, height: 60)
+                        .overlay {
+                            HStack {
+                                Text(viewModel.model.data.title)
+                                
+                                Spacer()
+                            }
+                            .padding(.horizontal)
                         }
-                        
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                }
-            
-            RoundedRectangle(cornerRadius: 10)
-                .foregroundStyle(Color(red: 220/255, green: 220/255, blue: 220/255))
-                .frame(width: 340, height: 350)
-                .overlay {
-                    VStack {
-                        HStack(alignment: .top) {
-                            Text(viewModel.model.content)
-                            
-                            Spacer()
+                    
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundStyle(Color(red: 220/255, green: 220/255, blue: 220/255))
+                        .frame(width: 340, height: 100)
+                        .overlay {
+                            HStack {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    Text("작성자: \(viewModel.model.data.writer)")
+                                    Text("작성일: \(viewModel.model.data.date)")
+                                }
+                                
+                                Spacer()
+                            }
+                            .padding(.horizontal)
                         }
-                        
-                        Spacer()
-                    }
-                    .padding()
-                }
-            
-            HStack {
-                Button {
-                    if isLike {
-                        viewModel.model.like -= 1
-                    } else {
-                        viewModel.model.like += 1
-                    }
-                    self.isLike.toggle()
-                } label: {
-                    Circle()
-                        .frame(width: 80, height: 80)
-                        .foregroundStyle(isLike ? .blue : Color(red: 220/255, green: 220/255, blue: 220/255))
+                    
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundStyle(Color(red: 220/255, green: 220/255, blue: 220/255))
+                        .frame(width: 340, height: 350)
                         .overlay {
                             VStack {
-                                Image(systemName: "hand.thumbsup")
+                                HStack(alignment: .top) {
+                                    Text(viewModel.model.data.content)
+                                    
+                                    Spacer()
+                                }
                                 
-                                Text("\(viewModel.model.like)")
+                                Spacer()
                             }
-                            .font(.system(size: 20, weight: .bold))
+                            .padding()
                         }
+                    
+                    Rectangle()
+                        .frame(height: 1)
+                        .foregroundStyle(.gray)
+                    
+                    ForEach(0..<viewModel.commentResponse.data.count, id: \.self) { index in
+                        CommentCell(content: viewModel.commentResponse.data[index].content, writer: viewModel.commentResponse.data[index].writer, date: viewModel.commentResponse.data[index].date)
+                    }
+                    
                 }
-                
-                Spacer()
+                .font(.system(size: 20, weight: .bold))
+            }
+            .onAppear {
+                viewModel.getPostDetail(postId: postId)
+                viewModel.getComment(postId: postId)
+            }
+            
+            HStack(spacing: 0) {
+                TextField("댓글 쓰기", text: $viewModel.commentModel.content)
+                    .frame(height: 45)
+                    .focused($isFocused)
+                    .padding(.horizontal)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 10).stroke(.blue, lineWidth: 1)
+                    }
                 
                 Button {
-                    if isHate {
-                        viewModel.model.hate -= 1
-                    } else {
-                        viewModel.model.hate += 1
-                    }
-                    self.isHate.toggle()
+                    isFocused = false
+                    viewModel.postComment(postId: postId)
+                    viewModel.commentModel.content = ""
                 } label: {
-                    Circle()
-                        .frame(width: 80, height: 80)
-                        .foregroundStyle(isHate ? .blue : Color(red: 220/255, green: 220/255, blue: 220/255))
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame(width: 50, height: 50)
+                        .foregroundColor(.blue)
                         .overlay {
-                            VStack {
-                                Image(systemName: "hand.thumbsdown")
-                                
-                                Text("\(viewModel.model.hate)")
-                            }
-                            .font(.system(size: 20, weight: .bold))
+                            Image(systemName: "paperplane")
+                                .foregroundColor(.white)
                         }
                 }
             }
-            .foregroundStyle(.black)
-            .padding(.horizontal, 30)
-            
-            Spacer()
         }
-        .font(.system(size: 20, weight: .bold))
     }
 }
 
 #Preview {
-    PostDetailView()
+    NavigationView {
+        PostDetailView(postId: 1)
+    }
 }

@@ -11,6 +11,7 @@ import Alamofire
 struct PostingView: View {
     @State var title: String
     @State var content: String
+    @FocusState private var isFocused: Bool
     
     var body: some View {
         VStack {
@@ -22,6 +23,7 @@ struct PostingView: View {
                     }
                     .padding(.horizontal)
                     .textInputAutocapitalization(.never)
+                    .focused($isFocused)
                 }
             
             RoundedRectangle(cornerRadius: 10)
@@ -41,6 +43,7 @@ struct PostingView: View {
                 }
             
             Button {
+                isFocused = false
                 submitPost(title: title, content: content)
             } label: {
                 RoundedRectangle(cornerRadius: 10)
@@ -64,12 +67,8 @@ struct PostingView: View {
             ]
 
             let url = "http://13.125.220.50:8080/issue"
-        
-            let headers: HTTPHeaders = [
-                "Authorization": "Bearer eyJKV1QiOiJBQ0NFU1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTcxODkzNjU1OSwiZXhwIjoxNzE5MDIyOTU5fQ._iwkEenq4C9oKu0XjtS2Lew11W6WfBuKeBFfuaMh1nw"
-            ]
 
-            AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+            AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: [.authorization(bearerToken: LoginUserHashCache.shared.checkAccessToken() ?? LoginUserHashCache.accessToken)])
                 .responseJSON { response in
                     switch response.result {
                     case .success(let value):

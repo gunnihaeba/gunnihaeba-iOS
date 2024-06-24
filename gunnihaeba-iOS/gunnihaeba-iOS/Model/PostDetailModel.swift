@@ -7,12 +7,32 @@
 
 import Foundation
 
-
 struct PostDetailModel: Codable {
+    var status: Int = 0
+    var message: String = ""
+    var data: Datas = Datas()
+}
+
+struct Datas: Codable {
     var title: String = ""
-    var writer: String = ""
-    var createdDate: String = ""
     var content: String = ""
-    var like: Int = 0
-    var hate: Int = 0
+    var writer: String = ""
+    var date: String = ""
+}
+
+struct CommentModel: Codable {
+    var content: String = ""
+    var issueId: Int = 0
+}
+
+struct CommentResponse: Codable {
+    var status: Int = 0
+    var message: String = ""
+    var data: [CommentData] = []
+}
+
+struct CommentData: Codable {
+    var writer: String = ""
+    var content: String = ""
+    var date: String = ""
 }
